@@ -2,6 +2,8 @@
 
 ## React uygulamalarında sayfalar arası geçiş (routing) yapmak için 👉 (npm install react-router-dom) kurulumu yapıyoruz
 
+## React uygulamalarında kullanıcıya bildirim (toast / popup mesaj) göstermek için kullanılan kütüphaneyi 👉 (npm install react-toastify) kuruyoruz
+
 ## npm create vite@latest - Proje için ortamı kurduktan sonra
 
 ## npm install tailwindcss @tailwindcss/vite - tailwindcss ile CSS framework'ünü kuruyoruz
