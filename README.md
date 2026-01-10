@@ -24,3 +24,5 @@ export default defineConfig({
 
 ## Daha sonra index.css dosyasına @import "tailwindcss"; import ediyoruz.
 ## Ve CSS frameworklerimiz hazır.
+
+## Next.js projelerinde hazır, güvenli ve modern bir kullanıcı kimlik doğrulama (authentication) sistemi kurmak için 👉 (npm install @clerk/nextjs) kurulumu yapıyoruz
