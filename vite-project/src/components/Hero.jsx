@@ -20,7 +20,7 @@ const Hero = () => {
  }
 
   return (
-    <div className="container 2xl:px-20 mx-auto my-10">
+    <div className="hero container 2xl:px-20 mx-auto my-10">
       <div className="bg-gradient-to-r from-blue-800 to-blue-950 text-white py-16 text-center mx-2 rounded-xl">
        <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-4">Başvurabileceğiniz 10.000'den fazla iş ilanı</h2>
        <p className="mb-8 max-w-xl mx-auto text-sm font-light px-5">Kariyerinizdeki Bir Sonraki Büyük Adım Tam Burada Başlıyor - En İyi İş Fırsatlarını Keşfedin ve Geleceğinize Doğru İlk Adımı Atın!</p>
