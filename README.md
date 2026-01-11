@@ -26,3 +26,6 @@ export default defineConfig({
 ## Ve CSS frameworklerimiz hazır.
 
 ## Next.js dışındaki React projelerinde (Vite, CRA vb.) Clerk ile kullanıcı kimlik doğrulama (auth) yapmak için kullanılan sistemi kurmak için 👉 (npm install @clerk/clerk-react) kurulumu yapıyoruz
+
+## Clerk ile google hsabı ile giriş yapılabiliyor, filtrelem ile arama çalışıyor
+<img width="1594" height="1240" alt="localhost_5174_" src="https://github.com/user-attachments/assets/5d1e1a7a-0992-41d4-bdcb-ebae4e95aeed" />
