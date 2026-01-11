@@ -162,7 +162,7 @@ export const jobsData = [
     {
         _id: '1',
         title: "Full Stack Developer",
-        location: "California",
+        location: "İzmir",
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
