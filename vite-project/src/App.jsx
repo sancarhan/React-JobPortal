@@ -5,6 +5,7 @@ import ApplyJob from './pages/ApplyJob'
 import Applications from './pages/Applications'
 
 
+
 const App = () => {
   return (
     <div>

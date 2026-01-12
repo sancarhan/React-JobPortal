@@ -20,9 +20,10 @@ export const AppContextProvider = (props) => {
   setJobs(jobsData)
  }
 
- useEffect(()=>(
-  fetchJobs()
- ),[])
+ useEffect(() => {
+  fetchJobs();
+}, []);
+
 
  const value = {
   setSearchFilter,searchFilter,
