@@ -98,10 +98,10 @@ export const JobLocations = [
 
 // Sample data for Manage Jobs Page
 export const manageJobsData = [
-    { _id: 1, title: "Full Stack Developer", date: 1729102298497, location: "Bangalore", applicants: 20 },
-    { _id: 2, title: "Data Scientist", date: 1729102298497, location: "San Francisco", applicants: 15 },
-    { _id: 3, title: "Marketing Manager", date: 1729102298497, location: "London", applicants: 2 },
-    { _id: 4, title: "UI/UX Designer", date: 1729102298497, location: "Dubai", applicants: 25 }
+    { _id: 1, title: "Back-End Geliştirici", date: 1729102298497, location: "Bangalore", applicants: 20 },
+    { _id: 2, title: "Front-End Geliştirici", date: 1729102298497, location: "San Francisco", applicants: 15 },
+    { _id: 3, title: "Full Stack Developer", date: 1729102298497, location: "London", applicants: 2 },
+    { _id: 4, title: "UI/UX Web Tasarım", date: 1729102298497, location: "Dubai", applicants: 25 }
 ];
 
 // Sample data for Profile Page
@@ -149,19 +149,19 @@ export const jobsApplied = [
 ];
 
 export const viewApplicationsPageData = [
-    { _id: 1, name: "Richard Sanford", jobTitle: "Full Stack Developer", location: "Bangalore", imgSrc: profile_img },
-    { _id: 2, name: "Enrique Murphy", jobTitle: "Data Scientist", location: "San Francisco", imgSrc: profile_img },
-    { _id: 3, name: "Alison Powell", jobTitle: "Marketing Manager", location: "London", imgSrc: profile_img },
-    { _id: 4, name: "Richard Sanford", jobTitle: "UI/UX Designer", location: "Dubai", imgSrc: profile_img },
-    { _id: 5, name: "Enrique Murphy", jobTitle: "Full Stack Developer", location: "Hyderabad", imgSrc: profile_img },
-    { _id: 6, name: "Alison Powell", jobTitle: "Data Scientist", location: "New Delhi", imgSrc: profile_img },
-    { _id: 7, name: "Richard Sanford", jobTitle: "Marketing Manager", location: "Chennai", imgSrc: profile_img },
+    { _id: 1, name: "Richard Sanford", jobTitle: "Back-End Geliştirici", location: "İzmir", imgSrc: profile_img },
+    { _id: 2, name: "Enrique Murphy", jobTitle: "Front-End Geliştirici", location: "İzmir", imgSrc: profile_img },
+    { _id: 3, name: "Alison Powell", jobTitle: "Full Stack Developer", location: "İstanbul", imgSrc: profile_img },
+    { _id: 4, name: "Richard Sanford", jobTitle: "Arayüz Geliştirme Uzmanı", location: "Manisa", imgSrc: profile_img },
+    { _id: 5, name: "Enrique Murphy", jobTitle: "Yazılım Mühendisi", location: "Ankara", imgSrc: profile_img },
+    { _id: 6, name: "Alison Powell", jobTitle: "Yazılım Mühendisi", location: "İstanbul", imgSrc: profile_img },
+    { _id: 7, name: "Richard Sanford", jobTitle: "Marketing Manager", location: "İstanbul", imgSrc: profile_img },
 ];
 
 export const jobsData = [
     {
         _id: '1',
-        title: "Full Stack Developer",
+        title: "Back-End Geliştirici",
         location: "İzmir",
         level: "Senior Level",
         companyId: {
@@ -190,12 +190,12 @@ export const jobsData = [
         </ol>`,
         salary: 82000,
         date: 1729681667114,
-        category: "Programming",
+        category: "Back-End Geliştirici",
     },
     {
         _id: '2',
-        title: "Data Scientist",
-        location: "New York",
+        title: "Front-End Geliştirici",
+        location: "İzmir",
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -223,12 +223,12 @@ export const jobsData = [
         </ol>`,
         salary: 72000,
         date: 1729681667114,
-        category: "Data Science",
+        category: "Front-End Geliştirici",
     },
     {
         _id: '3',
-        title: "UI/UX Designer",
-        location: "Bangalore",
+        title: "Full Stack Developer",
+        location: "İstanbul",
         level: "Beginner Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -256,12 +256,12 @@ export const jobsData = [
         </ol>`,
         salary: 61000,
         date: 1729681667114,
-        category: "Designing",
+        category: "Full Stack Developer",
     },
     {
         _id: '4',
-        title: "DevOps Engineer",
-        location: "Washington",
+        title: "Arayüz Geliştirme Uzmanı",
+        location: "Manisa",
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -289,12 +289,12 @@ export const jobsData = [
         </ol>`,
         salary: 53000,
         date: 1729681667114,
-        category: "Programming",
+        category: "Arayüz Uygulama Geliştirme Uzmanı",
     },
     {
         _id: '5',
-        title: "Software Engineer",
-        location: "Hyderabad",
+        title: "Yazılım Mühendisi",
+        location: "Ankara",
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -322,12 +322,12 @@ export const jobsData = [
         </ol>`,
         salary: 91000,
         date: 1729681667114,
-        category: "Programming",
+        category: "Yazılım Mühendisi",
     },
     {
         _id: '6',
-        title: "Network Engineer",
-        location: "Bangalore",
+        title: "Yazılım Mühendisi",
+        location: "İstanbul",
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -355,12 +355,12 @@ export const jobsData = [
         </ol>`,
         salary: 77000,
         date: 1729681667114,
-        category: "Networking",
+        category: "Yazılım Mühendisi",
     },
     {
         _id: '7',
-        title: "Project Manager",
-        location: "Bangalore",
+        title: "Front-End Geliştirici",
+        location: "İstanbul",
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -388,12 +388,12 @@ export const jobsData = [
         </ol>`,
         salary: 60000,
         date: 1729681667114,
-        category: "Management",
+        category: "Front-End Geliştirici",
     },
     {
         _id: '8',
         title: "Mobile App Developer",
-        location: "Hyderabad",
+        location: "Ankara",
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -421,12 +421,12 @@ export const jobsData = [
         </ol>`,
         salary: 112000,
         date: 1729681667114,
-        category: "Programming",
+        category: "Back-End Geliştirici",
     },
     {
         _id: '9',
-        title: "Cloud Architect",
-        location: "Hyderabad",
+        title: "Arayüz Uygulama Geliştirme Uzmanı",
+        location: "Ankara",
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -454,12 +454,12 @@ export const jobsData = [
         </ol>`,
         salary: 96000,
         date: 1729681667114,
-        category: "Programming",
+        category: "Back-End Geliştirici",
     },
     {
         _id: '10',
-        title: "Technical Writer",
-        location: "Mumbai",
+        title: "UI/UX Web Tasarım",
+        location: "Bursa",
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -487,12 +487,12 @@ export const jobsData = [
         </ol>`,
         salary: 72000,
         date: 1729681667114,
-        category: "Marketing",
+       category: "Grafik Tasarım Uzmanı",
     },
     {
         _id: '11',
-        title: "Cybersecurity Analyst",
-        location: "Mumbai",
+        title: "Grafik Tasarım Uzmanı",
+        location: "Bursa",
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -520,12 +520,12 @@ export const jobsData = [
         </ol>`,
         salary: 62000,
         date: 1729681667114,
-        category: "Cybersecurity",
+        category: "Grafik Tasarım Uzmanı",
     },
     {
         _id: '12',
-        title: "Business Analyst",
-        location: "Mumbai",
+        title: "Front-End Geliştirici",
+        location: "Bursa",
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -553,12 +553,12 @@ export const jobsData = [
         </ol>`,
         salary: 68000,
         date: 1729681667114,
-        category: "Management",
+        category: "Front-End Geliştirici",
     },
     {
         _id: '13',
-        title: "Marketing Specialist",
-        location: "Chennai",
+        title: "Grafik Tasarım Uzmanı",
+        location: "Manisa",
         level: "Beginner Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -586,12 +586,12 @@ export const jobsData = [
         </ol>`,
         salary: 77000,
         date: 1729681667114,
-        category: "Marketing",
+       category: "Grafik Tasarım Uzmanı",
     },
     {
         _id: '14',
-        title: "Data Scientist",
-        location: "California",
+        title: "Front-End Geliştirici",
+        location: "Konya",
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -624,7 +624,7 @@ export const jobsData = [
     {
         _id: '15',
         title: "UX/UI Designer",
-        location: "Hyderabad",
+        location: "Ankara",
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -652,7 +652,7 @@ export const jobsData = [
         </ol>`,
         salary: 64000,
         date: 1729681667114,
-        category: "Design",
+        category: "UI/UX Web Tasarım",
     },
     {
         _id: '16',
@@ -685,12 +685,12 @@ export const jobsData = [
         </ol>`,
         salary: 74000,
         date: 1729681667114,
-        category: "Programming",
+        category: "Back-End Geliştirici",
     },
     {
         _id: '17',
-        title: "Sales Manager",
-        location: "New York",
+        title: "Grafik Tasarım Uzmanı",
+        location: "Samsun",
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -718,12 +718,12 @@ export const jobsData = [
         </ol>`,
         salary: 59000,
         date: 1729681667114,
-        category: "Marketing",
+       category: "Grafik Tasarım Uzmanı",
     },
     {
         _id: '18',
-        title: "Human Resources Specialist",
-        location: "Washington",
+        title: "Front-End Geliştirici",
+        location: "İstanbul",
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -751,12 +751,12 @@ export const jobsData = [
         </ol>`,
         salary: 89000,
         date: 1729681667114,
-        category: "Management",
+        category: "Front-End Geliştirici",
     },
     {
         _id: '19',
-        title: "Content Marketing Manager",
-        location: "Mumbai",
+        title: "Grafik Tasarım Uzmanı",
+        location: "Bursa",
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -784,12 +784,12 @@ export const jobsData = [
         </ol>`,
         salary: 99000,
         date: 1729681667114,
-        category: "Marketing",
+       category: "Grafik Tasarım Uzmanı",
     },
     {
         _id: '20',
-        title: "Graphic Designer",
-        location: "Chennai",
+        title: "UI/UX Web Tasarım",
+        location: "Manisa",
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -817,12 +817,12 @@ export const jobsData = [
         </ol>`,
         salary: 91000,
         date: 1729681667114,
-        category: "Design",
+        category: "UI/UX Web Tasarım",
     },
     {
         _id: '21',
-        title: "Software Tester",
-        location: "Chennai",
+        title: "Back-End Geliştirici",
+        location: "Manisa",
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -850,7 +850,7 @@ export const jobsData = [
         </ol>`,
         salary: 123000,
         date: 1729681667114,
-        category: "Programming",
+        category: "Back-End Geliştirici",
     },
     {
         _id: '22',
@@ -875,7 +875,7 @@ export const jobsData = [
         </ol>
         <h2><strong>Skills Required</strong></h2>
         <ol>
-            <li>Strong knowledge of networking protocols and security technologies.</li>
+            <li>Strong knowledge of Yazılım Mühendisi protocols and security technologies.</li>
             <li>Experience with firewalls, VPNs, IDS/IPS, and security information systems.</li>
             <li>Relevant certifications (e.g., CISSP, CISM, CEH) are preferred.</li>
             <li>Excellent analytical and troubleshooting skills.</li>
@@ -883,12 +883,12 @@ export const jobsData = [
         </ol>`,
         salary: 87000,
         date: 1729681667114,
-        category: "Cybersecurity",
+        category: "Grafik Tasarım Uzmanı",
     },
     {
         _id: '23',
-        title: "Cloud Engineer",
-        location: "Hyderabad",
+        title: "Back-End Gelitirici",
+        location: "Ankara",
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
@@ -910,12 +910,12 @@ export const jobsData = [
         <ol>
             <li>Experience with cloud platforms and services.</li>
             <li>Proficiency in scripting languages such as Python or Bash.</li>
-            <li>Strong understanding of networking concepts and security.</li>
+            <li>Strong understanding of Yazılım Mühendisi concepts and security.</li>
             <li>Experience with container orchestration tools like Kubernetes.</li>
             <li>Good problem-solving skills and attention to detail.</li>
         </ol>`,
         salary: 102000,
         date: 1729681667114,
-        category: "Programming",
+        category: "Back-End Geliştirici",
     }
 ];
