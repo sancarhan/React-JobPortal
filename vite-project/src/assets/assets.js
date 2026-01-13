@@ -111,7 +111,7 @@ export const jobsApplied = [
         title: 'Full Stack Developer',
         location: 'Bangalore',
         date: '22 Aug, 2024',
-        status: 'Pending',
+        status: 'Başvuruldu',
         logo: company_icon,
     },
     {
@@ -119,7 +119,7 @@ export const jobsApplied = [
         title: 'Data Scientist',
         location: 'San Francisco',
         date: '22 Aug, 2024',
-        status: 'Rejected',
+        status: 'Reddedildi',
         logo: company_icon,
     },
     {
@@ -127,7 +127,7 @@ export const jobsApplied = [
         title: 'Marketing Manager',
         location: 'London',
         date: '25 Sep, 2024',
-        status: 'Accepted',
+        status: 'Kabul edildi',
         logo: company_icon,
     },
     {
@@ -135,7 +135,7 @@ export const jobsApplied = [
         title: 'UI/UX Designer',
         location: 'Dubai',
         date: '15 Oct, 2024',
-        status: 'Pending',
+        status: 'Başvuruldu',
         logo: company_icon,
     },
     {
@@ -143,7 +143,7 @@ export const jobsApplied = [
         title: 'Full Stack Developer',
         location: 'Hyderabad',
         date: '25 Sep, 2024',
-        status: 'Accepted',
+        status: 'Kabul edildi',
         logo: company_icon,
     },
 ];
