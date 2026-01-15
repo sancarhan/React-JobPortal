@@ -30,7 +30,8 @@ const Dashboard = () => {
               />
 
               <div className='absolute hidden group-hover:block top-0 right-0 z-10 rounded pt-12'>
-                <ul className='bg-white border  border-gray-100 rounded-md text-sm'>
+                <ul className='bg-white border  border-gray-100 rounded-md text-sm p-5'>
+                  <li className='py-1 px-3 cursor-pointer border-b border-gray-400'>Profil</li>
                   <li className='py-1 px-3 cursor-pointer'>Çıkış</li>
                 </ul>
               </div>
@@ -51,8 +52,8 @@ const Dashboard = () => {
                 to="/dashboard/add-job"
                 className={({isActive}) => `flex items-center p-3 sm:px-6 gap-2 w-full hover:text-blue-600 ${isActive && 'bg-blue-100 border-r-2 border-blue-500'}`}
               >
-                <img src={assets.add_icon} alt="" />
-                <p>İş Ekle</p>
+                <img className='min-w-4' src={assets.add_icon} alt="" />
+                <p className='max-sm:hidden'>İş Ekle</p>
               </NavLink>
         
 
@@ -61,8 +62,8 @@ const Dashboard = () => {
                 to="/dashboard/manage-job"
                  className={({isActive}) => `flex items-center p-3 sm:px-6 gap-2 w-full hover:text-blue-600 ${isActive && 'bg-blue-100 border-r-2 border-blue-500'}`}
               >
-                <img src={assets.home_icon} alt="" />
-                <p>İşleri Yönet</p>
+                <img className='min-w-4' src={assets.home_icon} alt="" />
+                <p className='max-sm:hidden'>İşleri Yönet</p>
               </NavLink>
          
 
@@ -71,8 +72,8 @@ const Dashboard = () => {
                 to="/dashboard/view-applications"
                  className={({isActive}) => `flex items-center p-3 sm:px-6 gap-2 w-full hover:text-blue-600 ${isActive && 'bg-blue-100 border-r-2 border-blue-500'}`}
               >
-                <img src={assets.person_tick_icon} alt="" />
-                <p>Uygulamaları Görüntüle</p>
+                <img className='min-w-4' src={assets.person_tick_icon} alt="" />
+                <p className='max-sm:hidden'>Uygulamaları Görüntüle</p>
               </NavLink>
  
           </ul>
