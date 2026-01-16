@@ -32,21 +32,21 @@ export default defineConfig({
 
 ## -----------------------------------------------------------------------------------
 
-## Projenin BACK-END kısmı için
+# Projenin BACK-END kısmı için
 
-# npm init -y yi kuruyoruz, Node.js projelerinde hızlıca package.json dosyası oluşturmak için kullanılan bir komuttur.
+## npm init -y yi kuruyoruz, Node.js projelerinde hızlıca package.json dosyası oluşturmak için kullanılan bir komuttur.
 
-# npm i express komutu, Express.js framework’ünü projene kurmak için.
+## npm i express komutu, Express.js framework’ünü projene kurmak için.
 
-# npm i jsonwebtoken komutu, JWT (JSON Web Token) kullanarak kimlik doğrulama (authentication) yapabilmen için gerekli paketi projene kurar.
+## npm i jsonwebtoken komutu, JWT (JSON Web Token) kullanarak kimlik doğrulama (authentication) yapabilmen için gerekli paketi projene kurar.
 
-# npm i bcrypt komutu, şifreleri güvenli şekilde hash’lemek (şifrelemek değil!) için kullanılan bcrypt kütüphanesini projene kurar.
+## npm i bcrypt komutu, şifreleri güvenli şekilde hash’lemek (şifrelemek değil!) için kullanılan bcrypt kütüphanesini projene kurar.
 
-# npm i mongoose komutu, MongoDB veritabanını Node.js / Express projene bağlamak için kullanılan Mongoose ODM kütüphanesini kurar.
+## npm i mongoose komutu, MongoDB veritabanını Node.js / Express projene bağlamak için kullanılan Mongoose ODM kütüphanesini kurar.
 
-# npm i mongoose nodemon svix komutu, backend projende veritabanı, geliştirme kolaylığı ve webhook güvenliği için 3 farklı paketi tek seferde kurar.
+## npm i mongoose nodemon svix komutu, backend projende veritabanı, geliştirme kolaylığı ve webhook güvenliği için 3 farklı paketi tek seferde kurar.
 
-## Back-en için verilen paketleri kurun.
+# Back-en için verilen paketleri kurun.
 
 # 🧠 Projenin Amacı
 
