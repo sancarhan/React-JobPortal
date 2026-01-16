@@ -9,10 +9,10 @@ const ViewApplications = () => {
           <thead>
             <tr className="border-b">
               <th className="py-2 px-4 text-left">#</th>
-              <th className="py-2 px-4 text-left">isim Soyisim</th>
-              <th className="py-2 px-4 text-left max-sm:hidden">İş</th>
+              <th className="py-2 px-4 text-center">isim Soyisim</th>
+              <th className="py-2 px-4 text-center max-sm:hidden">İş</th>
               <th className="py-2 px-4 text-left max-sm:hidden">Lockasyon</th>
-              <th className="py-2 px-4 text-left">CV</th>
+              <th className="py-2 px-4 text-center">CV</th>
               <th className="py-2 px-4 text-left">Durum</th>
             </tr>
           </thead>
@@ -48,7 +48,7 @@ const ViewApplications = () => {
                     CV <img src={assets.resume_download_icon} alt="" />
                   </a>
                 </td>
-                <td className="py-2 px-4">
+                <td className="py-2 px-4 text-center">
                   <div className="relative inline-block text-left group">
                     <button className="text-gray-500 action-button">...</button>
                     <div className="z-10 hidden absolute right-0 md:left-0 top-0 mt-2 w-32 bg-white border border-gray-200 rounded shadow group-hover:block">
