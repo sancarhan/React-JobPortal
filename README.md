@@ -46,6 +46,8 @@ export default defineConfig({
 
 ## npm i mongoose nodemon svix komutu, backend projende veritabanı, geliştirme kolaylığı ve webhook güvenliği için 3 farklı paketi tek seferde kurar.
 
+## npm i cors multer dotenv cloudinary komutu, backend projende CORS yönetimi, dosya yükleme, ortam değişkenleri ve bulut dosya depolama için gereken 4 kritik paketi tek seferde kurar.
+
 # Back-en için verilen paketleri kurun.
 
 # 🧠 Projenin Amacı
