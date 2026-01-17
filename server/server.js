@@ -4,6 +4,7 @@ import cors from 'cors'
 import  'dotenv/config'
 import connectDB from './config/db.js'
 import * as Sentry from "@sentry/node";
+import { clerkWebhooks } from './controllers/webhooks.js'
 
 // express → Backend sunucusunu ve API’yi oluşturur
 // cors → Frontend’in (React vb.) bu API’ye erişebilmesini sağlar
@@ -33,6 +34,8 @@ app.get('/',(req,res)=> res.send("API Çalışıyor"))
 app.get("/debug-sentry", function mainHandler(req, res) {
   throw new Error("My first Sentry error!");
 });
+app.post('/webhooks',clerkWebhooks)
+
 
 
 // Port
