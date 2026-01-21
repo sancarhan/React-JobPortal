@@ -34,6 +34,8 @@ export default defineConfig({
 
 # Projenin BACK-END kısmı için
 
+dasdadasdasdadadadadad
+
 ## npm init -y yi kuruyoruz, Node.js projelerinde hızlıca package.json dosyası oluşturmak için kullanılan bir komuttur.
 
 ## npm i express komutu, Express.js framework’ünü projene kurmak için.
