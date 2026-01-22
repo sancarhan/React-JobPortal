@@ -20,7 +20,7 @@ export default defineConfig({
     tailwindcss(),
   ],
 })
-sdasdasdasasddas
+
 ## 7.Bu kodu yapıştırıyoruz.
 
 ## 8.Daha sonra index.css dosyasına @import "tailwindcss"; import ediyoruz. Ve CSS frameworklerimiz hazır.
