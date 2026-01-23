@@ -1,100 +1,107 @@
 import Company from "../models/Company.js";
-import bcrypt from 'bcrypt'
-import { v2 as cloudinary } from 'cloudinary'
+import bcrypt from "bcrypt";
+import { v2 as cloudinary } from "cloudinary";
+import generateToken from "../utils/generateToken.js";
 
 // Yeni bir şirket kaydedin
-export const registerCompany = async(req,res) =>{
+export const registerCompany = async (req, res) => {
+  const { name, email, password } = req.body;
 
- const {name, email, password} = req.body
+  const imageFile = req.file;
 
- const imageFile = req.file;
-
- if (!name || !email || !password || !imageFile) {
-  return res.json({success:false, message: "Eksik Ayrıntılar"})
- }
-
- try {
-  
-  const companyExists = await Company.findOne({email})
-
-  if (companyExists) {
-   return res.json({success:false, message:"Şirket zaten kayıtlı"})
+  if (!name || !email || !password || !imageFile) {
+    return res.json({ success: false, message: "Eksik Ayrıntılar" });
   }
 
-  const salt = await bcrypt.genSalt(10)
-  const hashPassword = await bcrypt.hash(password, salt)
+  try {
+    const companyExists = await Company.findOne({ email });
 
-  const imageUpload = await cloudinary.uploader.upload(imageFile.path)
+    if (companyExists) {
+      return res.json({ success: false, message: "Şirket zaten kayıtlı" });
+    }
 
-  const company = await Company.create({
-   name,
-   email,
-   password: hashPassword,
-   image: imageUpload.secure_url,
-  })
+    const salt = await bcrypt.genSalt(10);
+    const hashPassword = await bcrypt.hash(password, salt);
 
-  res.json({
-   success:true,
-   company: {
-    _id: company._id,
-    name: company.name,
-    email: company.email,
-    image: company.image,
-   }
-   
-  })
+    const imageUpload = await cloudinary.uploader.upload(imageFile.path);
 
- } catch (error) {
-  
- }
+    const company = await Company.create({
+      name,
+      email,
+      password: hashPassword,
+      image: imageUpload.secure_url,
+    });
 
-}
+    res.json({
+      success: true,
+      company: {
+        _id: company._id,
+        name: company.name,
+        email: company.email,
+        image: company.image,
+      },
+      token: generateToken(company._id),
+    });
+  } catch (error) {
+    res.json({ success: true, message: error.message });
+  }
+};
 
 // --------------------------------------------------------------------------------------------------------
 
 // Şirket Giriş
-export const loginCompany = async () =>{
+export const loginCompany = async (req,res) => {
+  const { email, password } = req.body;
 
-}
+  try {
+    const company = await Company.findOne({ email });
+
+    if (bcrypt.compare(password, company.password)) {
+      res.json({
+        success: true,
+        company: {
+          _id: company._id,
+          name: company.name,
+          email: company.email,
+          image: company.image,
+        },
+        token: generateToken(company._id)
+      });
+    }
+    else{
+     res.json({success:false, message:'Geçersiz e-posta veya şifre'})
+    }
+  } catch (error) {
+   res.json({success:false, message:error.message})
+  }
+};
 
 // --------------------------------------------------------------------------------------------------------
 
 // Şirket verilerini alın
-export const getCompanyData = async (req,res) =>{
-
-}
+export const getCompanyData = async (req, res) => {};
 
 // --------------------------------------------------------------------------------------------------------
 
 // Yeni İş İlanı
-export const postJob = async (req,res) =>{
-
-}
+export const postJob = async (req, res) => {};
 
 // --------------------------------------------------------------------------------------------------------
 
 // Şirket iş başvurularını alın
-export const getCompanyJobApplicants = async (req,res) => {
-
-}
+export const getCompanyJobApplicants = async (req, res) => {};
 
 // --------------------------------------------------------------------------------------------------------
 
 // Şirket tarafından yayınlanan işleri alın
-export const getCompanyPostedJobs = async (req,res) => {
-
-}
+export const getCompanyPostedJobs = async (req, res) => {};
 
 // --------------------------------------------------------------------------------------------------------
 
 // İş başvurusu durumunu değiştir
-export const ChangeJobApplicationsStatus = async (req,res) => {
-
-}
+export const ChangeJobApplicationsStatus = async (req, res) => {};
 
 // --------------------------------------------------------------------------------------------------------
 
 // İş görünürlüğünü değiştirme
-export const ChangeVisiblity = async (req,res) => {
-
-}
+export const ChangeVisiblity = async (req, res) => {};
