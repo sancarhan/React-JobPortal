@@ -84,7 +84,19 @@ export const getCompanyData = async (req, res) => {};
 // --------------------------------------------------------------------------------------------------------
 
 // Yeni İş İlanı
-export const postJob = async (req, res) => {};
+export const postJob = async (req, res) => {
+
+ const {title, description, location, salary} = req.body
+
+ const companyId = req.company._id
+
+ try {
+  
+ } catch (error) {
+  
+ }
+ 
+};
 
 // --------------------------------------------------------------------------------------------------------
 
