@@ -7,7 +7,7 @@ import * as Sentry from "@sentry/node";
 import { clerkWebhooks } from './controllers/webhooks.js'
 import companyRoutes from './routes/companyRoutes.js'
 import connectCloudinary from './config/cloudinary.js'
-
+import jobRoutes from './routes/jobRoutes.js'
 // express → Backend sunucusunu ve API’yi oluşturur
 // cors → Frontend’in (React vb.) bu API’ye erişebilmesini sağlar
 // dotenv/config → .env dosyasındaki gizli değişkenleri (PORT, DB_URL vb.) kullanmanı sağlar
@@ -39,6 +39,7 @@ app.get("/debug-sentry", function mainHandler(req, res) {
 });
 app.post('/webhooks',clerkWebhooks)
 app.use('/api/company', companyRoutes)
+app.use('/api/jobs', jobRoutes)
 
 
 // Port

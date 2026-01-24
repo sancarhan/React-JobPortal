@@ -2,6 +2,7 @@ import Company from "../models/Company.js";
 import bcrypt from "bcrypt";
 import { v2 as cloudinary } from "cloudinary";
 import generateToken from "../utils/generateToken.js";
+import Job from "../models/Job.js";
 
 // Yeni bir şirket kaydedin
 export const registerCompany = async (req, res) => {
@@ -50,7 +51,7 @@ export const registerCompany = async (req, res) => {
 // --------------------------------------------------------------------------------------------------------
 
 // Şirket Giriş
-export const loginCompany = async (req,res) => {
+export const loginCompany = async (req, res) => {
   const { email, password } = req.body;
 
   try {
@@ -65,37 +66,49 @@ export const loginCompany = async (req,res) => {
           email: company.email,
           image: company.image,
         },
-        token: generateToken(company._id)
+        token: generateToken(company._id),
       });
-    }
-    else{
-     res.json({success:false, message:'Geçersiz e-posta veya şifre'})
+    } else {
+      res.json({ success: false, message: "Geçersiz e-posta veya şifre" });
     }
   } catch (error) {
-   res.json({success:false, message:error.message})
+    res.json({ success: false, message: error.message });
   }
 };
 
 // --------------------------------------------------------------------------------------------------------
 
 // Şirket verilerini alın
-export const getCompanyData = async (req, res) => {};
+export const getCompanyData = async (req, res) => {
+  
+};
 
 // --------------------------------------------------------------------------------------------------------
 
 // Yeni İş İlanı
 export const postJob = async (req, res) => {
+  const { title, description, location, salary, level, category } = req.body;
 
- const {title, description, location, salary} = req.body
+  const companyId = req.company._id;
 
- const companyId = req.company._id
+  try {
+    const newJob = new Job({
+      title,
+      description,
+      location,
+      salary,
+      companyId,
+      date: Date.now(),
+      level,
+      category,
+    });
 
- try {
-  
- } catch (error) {
-  
- }
- 
+    await newJob.save();
+
+    res.json({ success: true, newJob });
+  } catch (error) {
+    res.json({ success: false, message: error.message });
+  }
 };
 
 // --------------------------------------------------------------------------------------------------------
