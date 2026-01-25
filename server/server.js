@@ -26,7 +26,11 @@ await connectCloudinary()
 // Middleware’ler
 app.use(cors())
 app.use(express.json())
-app.use(clerkMiddleware())
+app.use(
+  '/api/protected',
+  clerkMiddleware()
+)
+
 // cors() → Tarayıcıdan gelen istekleri engellememesi için
 // express.json() → req.body ile JSON veri alabilmek için
 // (örneğin login, register, form gönderimleri)
